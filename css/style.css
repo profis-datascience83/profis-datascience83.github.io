@@ -154,20 +154,23 @@ footer {
     }
 }
 
-/* Container do cabeçalho com imagem e texto lado a lado */
+/* Container do cabeçalho com imagem à esquerda e texto à direita */
 .cabecalho-container {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     gap: 20px;
     text-align: left;
+    margin-bottom: 30px;
 }
 
-/* Estilo da imagem de perfil */
+/* Estilo da imagem de perfil no formato 3x4 e alinhada à esquerda */
 .foto-perfil {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
+    width: 90px;       /* Largura aproximada de uma foto 3x4 */
+    height: 120px;     /* Altura proporcional ao estilo 3x4 */
+    border-radius: 8px;
     object-fit: cover;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
     border: 2px solid #0077cc;
 }
+
